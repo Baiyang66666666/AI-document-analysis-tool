@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  #root {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-section, .output-section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #fafafa;
+  }
+  
+  textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button full width for better UX */
+    box-sizing: border-box;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #2980b9;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .chat-history {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .message-pair {
+    margin-bottom: 15px;
+  }
+  
+  .user-message {
+    background-color: #eaf6ff;
+    padding: 10px 15px;
+    border-radius: 15px 15px 0 15px;
+    margin-left: 20%;
+    text-align: right;
+    word-wrap: break-word;
+    max-width: 80%;
+    box-sizing: border-box;
+  }
+  
+  .ai-message {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 15px 15px 15px 0;
+    margin-right: 20%;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 80%;
+    box-sizing: border-box;
+  }
+  
+  .status-message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+  }
+  
+  .success-message {
+    color: #27ae60;
+  }
+  
+  .loading-message {
+    color: #3498db;
+  }
+  
+  .api-key-section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .api-key-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
