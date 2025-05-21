@@ -5,7 +5,6 @@
 This project is a prototype of a full-stack web application designed to automate document analysis, extract key insights and generate summaries through large-scale language modelling (LLM).Users can interact with the AI in natural language by pasting text, view chat history, and process potential API keys. the entire application is packaged as a Docker image for easy deployment and testing.
 
 ## Core Features and Technology Stack
-*** Translated with www.DeepL.com/Translator (free version) ***
 * **Frontend**: Provides an intuitive user interface using **React.js** (built with **Vite**).
     * Allows users to paste UTF-8 encoded plain text documents.
     * Provides natural language query input box to interact with AI.
@@ -26,7 +25,6 @@ This project is a prototype of a full-stack web application designed to automate
 * **Tests**: Contains unit and integration tests based on **Python `unittest`**.
     * Test scripts are located at `/home/src/tests/run_tests.py`.
     * Can be executed with the `docker run <image_tag> python /home/src/tests/run_tests.py` command.
-*** Translated with www.DeepL.com/Translator (free version) ***
 
 
 
@@ -55,7 +53,6 @@ This project is a prototype of a full-stack web application designed to automate
     * **Data Privacy**: The application is designed to process user input in plain text.In a production environment, any sensitive data would need to be encrypted during transmission and processing, and comply with relevant data privacy regulations.No data persistence is involved in this project prototype, and all data is destroyed at the end of the session (except for chat history which is maintained on the front-end).
     * **Error Handling**: Ensure that the front-end clearly displays error messages returned by the back-end instead of crashing, improving user experience and system stability.
 
-*** Translated with www.DeepL.com/Translator (free version) ***
 
 ## Installation and operation
 
